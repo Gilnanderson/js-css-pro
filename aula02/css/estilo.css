@@ -3,3 +3,6 @@ body{
     color: white;
     font-family: arial;
 }
+h1{
+    border-bottom: 2px dotted white;
+}
