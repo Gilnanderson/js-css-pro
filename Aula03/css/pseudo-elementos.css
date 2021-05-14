@@ -1,0 +1,16 @@
+div{
+    color: red;
+}
+div::before{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 1px dashed red;
+    border-radius: 50%;
+    background: purple;
+    content: "";
+}
+
+div::after{
+    content: " em CSS Pro";
+}
