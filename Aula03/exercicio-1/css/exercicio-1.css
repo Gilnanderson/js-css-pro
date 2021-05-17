@@ -1,0 +1,24 @@
+body{
+    background: salmon;
+}
+
+div{
+    color: seagreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div::before{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 2px solid blueviolet;
+    border-left: 2px solid yellowgreen;
+    margin-right: 2px;
+    background: white;
+    content: " ";
+}
+
+div::after{
+    content: " Porto Alegre - RS";
+    color: crimson;
+}
