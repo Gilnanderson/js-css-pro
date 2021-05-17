@@ -8,12 +8,11 @@ div{
 }
 
 div::before{
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 13px;
     display: inline-block;
-    border: 2px solid blueviolet;
-    border-left: 2px solid yellowgreen;
-    margin-right: 2px;
+    border-left: 3px solid yellowgreen;
+    margin-right: 8px;
     background: white;
     content: " ";
 }
