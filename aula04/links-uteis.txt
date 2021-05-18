@@ -1,1 +1,8 @@
 https://education.github.com/git-cheat-sheet-education.pdf
+https://colorhunt.co
+https://color.adobe.com/pt/create/color-wheel
+https://cssgradient.io
+https://coolors.co
+https://contrast-ratio.com
+https://cssgradient.io/blog/css-gradient-text/
+https://github.com/totvs/tds-vscode/issues/434
