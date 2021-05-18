@@ -1,0 +1,38 @@
+.container{
+    border: 3px solid purple;
+    width: 300px;
+    height: 200px;
+
+    position: relative;
+}
+
+.item{
+    border: 1px solid red;
+    width: 60px;
+    height: 60px;
+
+    /* position absolute: nos permite a config mais 4 prop: top, bottom, left, right */
+    position: absolute;
+    /* bottom: 10px;
+    right: 10px; */
+}
+
+.filho-a{
+    background: greenyellow;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.filho-b{
+    background: green;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.filho-c{
+    background: darkgreen;
+    top: 30px;
+    right: 30px;
+}
