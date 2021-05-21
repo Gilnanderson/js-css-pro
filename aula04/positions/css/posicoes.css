@@ -36,3 +36,29 @@
     top: 30px;
     right: 30px;
 }
+
+/* exemplo das setas */
+.seta {
+    border: 1px solid red;
+    width: 20px;
+    height: 20px;
+  
+    position: absolute;
+    top: 100px;
+  }
+  
+  .direita {
+    right: 0;
+  }
+  
+  .imagem {
+    background: gray;
+    width: 200px;
+    height: 100px;
+  
+    /* nao precisamos colocar a imagem em position absolute */
+    /* para evitar de termos de posiciona-la manualmente no ponto */
+    /* exato que necessitamos - para isso usamos as propriedades */
+    /* basicas */
+    margin: 50px auto;
+  }
