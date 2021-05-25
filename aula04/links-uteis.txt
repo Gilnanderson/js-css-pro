@@ -6,3 +6,4 @@ https://coolors.co
 https://contrast-ratio.com
 https://cssgradient.io/blog/css-gradient-text/
 https://github.com/totvs/tds-vscode/issues/434
+https://github.com/public-apis/public-apis

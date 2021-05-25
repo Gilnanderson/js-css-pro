@@ -1,13 +1,24 @@
+:root{
+    --largura-capa: 300px;
+    --altura-capa: 300px;
+
+    --largura-miolo: calc(var(--largura-capa) / 3.5);
+    --altura-miolo: calc(var(--altura-capa) / 3.5);
+
+    --top-miolo: calc( (var(--largura-capa) / 2) - (var(--largura-miolo) / 2) );
+    --left-miolo: var(--top-miolo);
+}
+
 .container{
-    width: 300px;
-    height: 300px;
+    width: var(--largura-capa);
+    height: var(--altura-capa);
 }
 
 .capa{
     background:url(../img/capa-disco.png);
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    width: var(--largura-capa);
+    height: var(--altura-capa);
     position: absolute;
     z-index: 2;
 }
@@ -21,11 +32,11 @@
     border-radius: 50%;
     /* background: repeating-radial-gradient(circle at 50%, white, black, black 2px, black 20px); */
     background: repeating-radial-gradient(#000,#000 10px,#333 6px,#334 12px);
-    width: 295px;
-    height: 295px;
+    width: var(--largura-capa);
+    height: var(--altura-capa);
     position: relative;
     z-index: 1;
-    top: 2px;
+    /* top: 2px; */
     left: 50px;
     transition: transform 2s;
 }
@@ -37,13 +48,13 @@
 }
 
 .rotulo{
-    width: 47px;
-    height: 47px;
+    width: var(--largura-miolo);
+    height: var(--altura-miolo);
     border-radius: 50%;
     background-image: url(../img/capa-disco.png);
     background-size: cover;
-    top: 124px;
-    left: 124px;
+    top: var(--top-miolo);
+    left: var(--left-miolo);
     z-index: 3;
     position:absolute;
 }
