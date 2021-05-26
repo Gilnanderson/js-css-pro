@@ -1,0 +1,49 @@
+body{
+    background: black;
+}
+
+h1{
+    color: white;
+    font-size: 200px;
+    text-align: center;
+}
+
+.fire{
+    animation-name: incendio;
+    animation-duration: 4s;
+    /* animation-iteration-count:infinite; */
+    animation-timing-function: linear;
+    /* animation-direction: alternate; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes incendio{
+    to{
+        text-shadow: 0 0 20px #FEFCC9,
+                10px -10px 30px #FEEC85,
+                -20px -20px 40px #FFAE34,
+                20px -40px 50px #EC760C,
+                0 -80px 70px #973716,
+                10px -90px 80px #451B0E;
+    }
+}
+
+
+.neon{
+    text-shadow:0 0 10px #fff, 
+                0 0 20px #fff, 
+                0 0 30px #fff,
+                0 0 40px #ff00de,
+                0 0 70px #ff00de, 
+                0 0 80px #ff00de,
+                0 0 100px #ff00de, 
+                0 0 150px #ff00de;
+}
+
+.game{
+    
+    text-shadow:10px 10px 0 #ffd217, 
+                20px 20px 0 #5ac7ff,
+                30px 30px 0 #ffd217, 
+                40px 40px 0 #5ac7ff;
+}

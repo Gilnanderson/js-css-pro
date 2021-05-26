@@ -7,3 +7,6 @@ https://contrast-ratio.com
 https://cssgradient.io/blog/css-gradient-text/
 https://github.com/totvs/tds-vscode/issues/434
 https://github.com/public-apis/public-apis
+https://redstapler.co/10-stunning-css-3d-effect-must-see/
+https://polypane.app/css-3d-transform-examples/
+https://css-tricks.com/how-to-create-neon-text-with-css/

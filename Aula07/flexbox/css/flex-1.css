@@ -1,0 +1,36 @@
+body{
+    background: #002244;
+}
+
+.container{
+    border: 3px solid white;
+    width: 640px;
+    height: 480px;
+
+    display: flex;
+    /* justifica o conteúdo: é uma propriedade do PAI */
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    /* alinha os itens (filhos) na vertical */
+    /* pode forçar os filhos se esticarem (strech) desde que eles não possuam uma altura definida(height) */
+    align-items: center;
+}
+
+.filho{
+    border: 2px solid yellow;
+    width: 100px;
+    height: 100px;
+
+    font-size: 40px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.alto{
+    height: 240px;
+
+}
