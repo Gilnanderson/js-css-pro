@@ -1,0 +1,35 @@
+body {
+    background: #002244;
+  }
+  
+  .container {
+    border: 3px solid white;
+    width: 640px;
+    height: 480px;
+  
+    display: flex;
+    /* flex-direction é a direção em que os elementos sao renderizados dentro do container pai */
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+.filho {
+    color: white;
+    border: 2px solid yellow;
+    width: 100px;
+    height: 100px;
+}
+
+.primeiro{
+    order: 0;
+}
+
+.segundo{
+    order: 1;
+}
+
+.terceiro{
+    order: 2;
+}

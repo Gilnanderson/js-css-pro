@@ -1,0 +1,23 @@
+body {
+    background: #002244;
+}
+
+.container {
+    border: 3px solid white;
+    /* width: 640px;*/
+    height: 480px; 
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.filho {
+    color: white;
+    border: 2px solid yellow;
+    width: 100px;
+    height: 100px;
+
+    /* flex-basis: 200px; */
+}

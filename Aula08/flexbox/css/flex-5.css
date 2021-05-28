@@ -1,0 +1,29 @@
+body {
+    background: #002244;
+}
+
+.container {
+    border: 3px solid white;
+    /* width: 640px; */
+    height: 480px;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* alinha os items(filhos) entre seus eixos */
+    align-items: flex-end;
+    /* alinha TODO o conteudo no eixo Y do container pai */
+    /* align-content: center; */
+    justify-content: space-between;
+}
+
+.filho {
+    color: white;
+    border: 2px solid yellow;
+    width: 100px;
+    height: 100px;
+}
+
+.maior{
+    height: 130px;
+    align-self: flex-start;
+}
