@@ -1,0 +1,123 @@
+:root{
+    --fundo: linear-gradient(var(--forte), var(--super-forte));
+    --claro: rgba(255, 255, 255, 0.8);
+    --fraco: #d8e3e7;
+    --medio: #51c4d3;
+    --forte: #126e82;
+    --super-forte: #132c33;
+}
+
+html, body{
+    /* vh/vw: Viewport */
+    height: 100vh;
+}
+
+@media screen and (max-height: 400px){
+    html, body{
+        height: auto;
+    }
+
+    .welcome{
+        margin-top: 20px
+    }
+    
+}
+
+body{
+    margin: 0;
+    background: var(--fundo);
+    font-family: Raleway, Arial;
+}
+
+nav{
+    background: var(--medio);
+    padding: 10px;
+
+    height: 62px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    border-radius: 4px;
+    background: var(--fraco) ;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--super-forte);
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: var(--fraco);
+    background: var(--super-forte);
+}
+
+.esquerda{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 82px);
+
+
+}
+
+.welcome{
+    border-radius: 10px;
+    background: var(--claro);
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome button{
+    padding: 12px;
+    border: 1px solid var(--forte);
+    border-radius: 4px;
+    background: var(--fraco);
+    color: var(--forte);
+    font-weight: bold;
+}
+
+.welcome button:hover{
+    background: var(--forte);
+    color: var(--fraco);
+}
+
+.planos{
+    border-top: 1px dotted var(--medio);
+    margin-top: 20px;
+    padding-top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.plano{
+    /* width: 100%; */
+    font-weight: bold;
+}
+
+.plano h4{
+    background: var(--forte);
+    color: var(--claro);
+    padding: 4px;
+    width: 100px;
+}
+
+.plano a{
+    color: var(--super-forte);
+    text-decoration: none;
+}
+
+.plano a:hover{
+    text-decoration: underline;
+}
