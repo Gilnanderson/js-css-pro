@@ -1,0 +1,58 @@
+.container{
+    width: 640px;
+    height: 480px;
+    border: 2px solid white;
+    @include borda-redonda();
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        color: white;
+        text-align: center;
+    }
+
+    .foto{
+        width: 156px;
+        height: 156px;
+        border: 1px dashed $branco;
+        background: url(../img/#{$foto});
+        background-size:contain;
+        margin-bottom: 20px;
+
+        
+
+        @include borda-redonda();
+        @include sombra(4px, 4px, green);
+    }
+
+    button{
+        background: $laranja;
+
+        @include botao-custom(){
+            border-radius: 16px;
+        };
+        //Quando é alguma propriedade que se refere ao elemento pai, usamos o &
+        &:hover{
+            background: $fundo;
+            color: $laranja;
+            cursor: pointer;
+        }
+    }
+
+    p{
+        color: $branco;
+
+        &.curso{
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        &.local{
+            font-style: italic;
+        }
+    }
+
+    
+}

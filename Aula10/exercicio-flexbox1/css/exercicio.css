@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div{
+    border: 3px solid black;
+    flex-grow: 8;
+    margin: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div:nth-child(2),
+div:nth-child(3){
+    height: 40px;
+    flex-grow: 1;
+}

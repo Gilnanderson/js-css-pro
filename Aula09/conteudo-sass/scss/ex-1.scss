@@ -1,13 +1,16 @@
 //primeiro exemplo de Sass
+$fundo: orange;
+$cor-titulo: yellow;
+$border: 4px solid green;
 body{
-    background: red;
+    background: $fundo;
 
     div{
-        border: 2px solid white;
+        border: $border;
 
         h1{
             font-size: 12px;
-            color: yellow;
+            color: $cor-titulo;
         }
 
         h2{
