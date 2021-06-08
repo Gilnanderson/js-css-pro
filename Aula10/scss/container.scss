@@ -25,6 +25,19 @@
 
         @include borda-redonda();
         @include sombra(4px, 4px, green);
+
+        @media screen and (max-width: 700px){
+            @include bolinha-ou-quadrado(true){
+                border: 3px dotted red;
+            }
+        }
+
+        @media screen and (max-width: 500px){
+            @include bolinha-ou-quadrado(true){
+                border: 5px dotted yellow;
+            }
+        }
+        
     }
 
     button{
@@ -56,3 +69,24 @@
 
     
 }
+
+// lista em sass
+$cores: red, yellow, orange, purple;
+@each $cor in $cores {
+    .item-#{$cor}{
+        background: $cor;
+    }
+}
+
+// for
+@for $i from 1 through 3{
+    li:nth-child(#{$i}){
+        background: red;
+    }
+}
+
+// @for $i from 1 through 30 {
+//     ul:nth-child(#{$i}) {
+//       background: red;
+//     }
+//   }
