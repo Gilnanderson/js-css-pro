@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+
+    <script>
+        var root = document.getElementById('root');
+        // root.innerHTML = '<h1>JavaScript</h1><hr>';
+        var h1 = document.createElement('h1');
+        h1.innerHTML = 'JavaScript';
+        h1.setAttribute('class', 'destaque');
+        h1.setAttribute('id', 'titulo');
+        h1.setAttribute('data-test-id',  'titulo-pagina');
+
+        root.appendChild(h1);
+
+        var hr = document.createElement('hr');
+        root.appendChild(hr);
+
+        var p = document.createElement('p');
+        p.innerHTML = 'Bem-Vindo';
+        root.appendChild(p);
+
+        var span = document.createElement('span');
+        span.innerHTML = ' - JS PRO!';
+        p.appendChild(span);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nome"></div>
+    <div id="preco"></div>
+    <div id="marca"></div>
+
+    <script>
+        var produto = {
+            nome: "Televisão",
+            preco: 1599.66,
+            marca: "LG"
+        };
+
+        var nome = document.getElementById('nome');
+        nome.innerHTML = produto.nome;
+
+        var preco = document.getElementById('preco');
+        preco.innerHTML = 'R$ ' + produto.preco;
+
+        var marca = document.getElementById('marca');
+        marca.innerHTML = produto.marca;
+    </script>
+</body>
+</html>
