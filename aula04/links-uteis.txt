@@ -12,3 +12,4 @@ https://polypane.app/css-3d-transform-examples/
 https://css-tricks.com/how-to-create-neon-text-with-css/
 http://flexboxfroggy.com/#pt-br
 https://scout-app.io/
+https://loading.io
