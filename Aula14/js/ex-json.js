@@ -1,4 +1,4 @@
-var texto = '[{"nome" : "TV"}]';
+var texto = '[{"nome" : "TV"}, {"nome" : "Radio"}]';
 
 console.log(texto);
 

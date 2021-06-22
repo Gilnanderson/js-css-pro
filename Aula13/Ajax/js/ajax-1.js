@@ -25,7 +25,11 @@ function mostraDados(){
 
 var btnProdutos = document.getElementById('btn-produtos')
 btnProdutos.addEventListener('click', function(){
-    carregaDados('produtos.json');
+    var exibe = carregaDados('produtos.json');
+    for(var i = 0; i < exibe.length; i++){
+        carregaDados(exibe[i].nome);
+    }
+    
 });
 
 var btnCarros = document.getElementById('btn-carros')
