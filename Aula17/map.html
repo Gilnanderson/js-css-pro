@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Filter Reduce</title>
+</head>
+<body>
+    <h1>Map Filter Reduce</h1>
+
+    <script>
+        // MAP //
+        const carros = ["Ford", "Fiat", "Honda"];
+
+        const listaCarros = carros.map(item => {
+            return `Carro ${item}`
+        })
+
+        console.log(listaCarros);
+        console.log(carros);
+
+        const numero = [2, 4, 6, 8, 10, 12, 14, 16];
+
+        const numerosX3 = numero.map(item => item*3);
+        console.log(numerosX3);
+
+        const aulas = [
+            {
+                nome: 'HTML 1',
+                tempo: 10
+            },
+            {
+                nome: 'HTML 2',
+                tempo: 20
+            },
+            {
+                nome: 'CSS 3',
+                tempo: 30
+            },
+            {
+                nome: 'CSS 4',
+                tempo: 40
+            },
+            {
+                nome: 'JS 5',
+                tempo: 50
+            },
+            {
+                nome: 'JS 6',
+                tempo: 60
+            },
+        ];
+
+        const tempoAula = aulas.map(aula => aula.tempo);
+
+        console.log(tempoAula);
+
+        //FILTER //
+
+        const frutas = ['banana', undefined, null, '', 'uva', 0, 'maçã'];
+
+        const arrayLimpa = frutas.filter(frutas => {
+            return frutas
+        });
+        console.log(arrayLimpa);
+
+        const limpa = frutas.filter(frutas => frutas == 'banana');
+
+        console.log(limpa);
+
+        const numeros = [2, 4, 6, 8, 10, 12, 14, 16];
+
+        const buscaMaior = numero.filter(numeros => numeros < 10);
+        console.log(buscaMaior);
+
+        const aulas2 = [
+            {
+                nome: 'HTML 1',
+                tempo: 10
+            },
+            {
+                nome: 'HTML 2',
+                tempo: 20
+            },
+            {
+                nome: 'CSS 3',
+                tempo: 30
+            },
+            {
+                nome: 'CSS 4',
+                tempo: 40
+            },
+            {
+                nome: 'JS 5',
+                tempo: 50
+            },
+            {
+                nome: 'JS 6',
+                tempo: 60
+            },
+        ];
+
+        const filtraAulas = aulas2.filter(item => item.tempo >30);
+        console.log(filtraAulas);
+
+    </script>
+</body>
+</html>

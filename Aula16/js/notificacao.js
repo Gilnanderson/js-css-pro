@@ -10,7 +10,7 @@ mostraNotification.addEventListener('click', function(event){
 function chamaNotification(){
     console.log('Funcionou2');
     if(!Notification){
-        alert("Verifica Notification");
+        alert("Verificar Notification");
         return;
     }
     

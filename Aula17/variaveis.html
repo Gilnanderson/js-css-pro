@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+</head>
+<body>
+    <h1>Variaveis</h1>
+
+    <script>
+        {
+            var carrito = "carro bonito";
+            let carrinho = "estranho";
+            const carro2 = "carro 2";
+        }
+
+        carrinho = "normal";
+        console.log(carrinho);
+
+        for(var i = 0; i< 5; i++ ){
+            console.log(i);
+        }
+
+        i= 300;
+        console.log(i);
+
+        console.log(carrito);
+
+        // Arrow Function
+        
+
+        const variavel = (value1, value2) => value1 + value2;
+        
+        console.log(variavel(5, 10));
+
+        const variavel2 = 3333333
+
+        //INTERPOLAÇÃO
+        console.log(`valor da variavel   ${variavel2}   continua valor `);
+
+        //DESCONSTRUÇÃO
+
+        const carro = {
+            marca: "Fiat",
+            ano: 2018,
+            portas: 4,
+        }
+
+        const {marca, ano} = carro;
+        console.log(marca, ano);
+
+
+    </script>
+</body>
+</html>
