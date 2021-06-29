@@ -3,7 +3,7 @@ let buscar = document.querySelector('#buscar');
 let exibe = document.querySelector('#box');
 let infos = document.querySelector('#infos');
 
-const url = ' http://www.omdbapi.com/';
+const url = ' https://www.omdbapi.com/';
 const apiKey = 'apikey=25894210'
 let chamada = new XMLHttpRequest();
 
@@ -22,14 +22,14 @@ function limpar(){
 }
 
 function EnviaDados(filme){
-    var filme = document.querySelector('#filme').value.trim();
-    chamada.open("POST", url + "?t=" + filme + "&" + apiKey, true);
+    let nomeFilme = document.querySelector('#filme').value.trim();
+    chamada.open("GET", url + "?t=" + nomeFilme + "&" + apiKey, true);
 
     chamada.onreadystatechange = function(){
         
         if(this.readyState == 4 && this.status == 200){
             
-            console.log('teste', filme);
+            console.log('teste', nomeFilme);
             const array = JSON.parse(this.responseText);
             
             mostraArray(array);
