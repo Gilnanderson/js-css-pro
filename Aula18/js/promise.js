@@ -67,7 +67,22 @@ fetch(url, {
 }).then(response => response.json())
 .then(response => console.log(response));
 
-//POST
-fetch(url, {
-    method: "POST"
-})
+// //POST
+// fetch(url, {
+//     method: "POST",
+//     headers:{
+//         "Content-type": "application/json; charset=utf-8"
+//     },
+//     body:'{"title_task": "Adicionado malandramente com post FETCH", "Level": "8"}'
+// }).then((resposta) => resposta.json())
+// .then(resposta => console.log(resposta));
+
+//PUT
+fetch(`${url}/1`, {
+    method: "PUT",
+    headers: {
+        "Content-Type": "application/json; charset=utf-8"
+    },
+    body: '{"title_task": "Adicionado com FETCH(PUT)", "level": "9998765432"}'
+}).then((resposta) => resposta.json())
+.then((resposta) => console.log(resposta));
