@@ -13,3 +13,4 @@ https://css-tricks.com/how-to-create-neon-text-with-css/
 http://flexboxfroggy.com/#pt-br
 https://scout-app.io/
 https://loading.io
+https://github.com/bradtraversy/50projects50days

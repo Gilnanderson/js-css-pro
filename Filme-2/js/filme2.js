@@ -6,7 +6,7 @@ let container = document.querySelector('.container');
 
 const url = 'https://www.omdbapi.com/?';
 const apiKey = 'apikey=25894210'
-let chamada = new XMLHttpRequest();
+// let chamada = new XMLHttpRequest();
 
 buscar.addEventListener('click', function(event){
     event.preventDefault();
@@ -30,6 +30,7 @@ function EnviaDados(filme){
         method: "GET"
     }).then(response => response.json())
     .then(response => {
+        console.log(response.Search);
         mostraFilme(response.Search)
     }).catch(e =>  {
         console.log(e.Erro);
@@ -39,19 +40,24 @@ function EnviaDados(filme){
 
 
 function mostraFilme(response){
-    console.log(response.Response);
     let saida = '';
-    if(response){
+    try {
+        
+        
         for(let i = 0; i<response.length; i++){
             const {Title, Year, Type, Poster} = response[i];
             saida += `<div class="box"><div class="poster"><img src="${Poster}" alt=""></div><div class="infos"><p> Filme: ${Title}  </p><p>Ano:  ${Year}  </p><p>Tipo:  ${Type}  </p></div></div>`;
             container.innerHTML = saida;
         }
-    }else{
-        container.innerHTML = "Filme não encontrado!";
-    }
     
-    console.log(saida);
+    } catch (error) {
+        saida += `<div class="box"><div class="poster"><img src="img/not_found.png" alt="não encontrado"></div><div class="infos"><p> Filme não encontrado!  </p></div></div>`;
+        container.innerHTML = saida;
+    }
+    // console.log(response.Response);
+    
+    
+    // console.log(saida);
     
 
     
